@@ -1,0 +1,119 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#nav {
+  height: 20vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nav span {
+  background: pink;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-left: 4rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#nav svg {
+  background: pink;
+  margin-right: 4rem;
+}
+
+#scroll-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 360vw;
+}
+
+#scroll-wrapper #first {
+  height: 100vh;
+  width: 200vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#scroll-wrapper #first #particles-div {
+  background: pink;
+  height: 100vh;
+  width: 200vw;
+  position: fixed;
+}
+
+#scroll-wrapper #first #side-text {
+  font-size: 1rem;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  white-space: nowrap;
+  margin-left: -5rem;
+  z-index: 10;
+  background: pink;
+}
+
+#scroll-wrapper #first #inner-div {
+  width: 50vw;
+  z-index: 10;
+  background: pink;
+}
+
+#scroll-wrapper #first #inner-div #title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4rem;
+  font-weight: bolder;
+  display: block;
+  margin-bottom: .5rem;
+}
+
+#scroll-wrapper #first #inner-div #description {
+  line-height: 1.5;
+}
+
+#scroll-wrapper #second {
+  height: 100vh;
+  background: green;
+  width: 50vw;
+}
+
+#scroll-wrapper #third {
+  height: 100vh;
+  background: blue;
+  width: 100vw;
+}
+
+#scroll-wrapper #fourth {
+  height: 100vh;
+  background: orange;
+  width: 10vw;
+}
+/*# sourceMappingURL=style.css.map */

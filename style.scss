@@ -1,0 +1,94 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+$bkcolor: pink;
+#nav{
+    height: 20vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span{
+        background: $bkcolor;
+        font-size: 3rem;
+        font-weight: bolder;
+        margin-left: 4rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    svg{
+        background: $bkcolor;
+        margin-right: 4rem;
+    }
+}
+
+#scroll-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
+    //this width = sum of child widths
+    width: 360vw;
+
+       #first{
+            height: 100vh;
+            width: 200vw;
+            display: flex;
+            align-items: center;
+            #particles-div{
+                background: $bkcolor;
+                height: 100vh;
+                width: 200vw;
+                position: fixed;
+            }
+            #side-text{
+                font-size: 1rem;
+                transform: rotate(-90deg);
+                -webkit-transform: rotate(-90deg);
+                white-space: nowrap;
+                margin-left: -5rem;
+                z-index: 10;
+                background: $bkcolor;
+            }
+            #inner-div{
+                width: 50vw;
+                z-index: 10;
+                background: $bkcolor;
+                #title{
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 4rem;
+                    font-weight: bolder;
+                    display: block;
+                    margin-bottom: .5rem;
+                }
+                #description{
+                    line-height: 1.5;
+                }
+            }
+        }
+
+        #second{
+            height: 100vh;
+            background: green;
+            width: 50vw;
+        }
+        
+        #third{
+            height: 100vh;
+            background: blue;
+            width: 100vw;
+        }
+
+        #fourth{
+            height: 100vh;
+            background: orange;
+            width: 10vw;
+        }
+  }
