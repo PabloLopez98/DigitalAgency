@@ -1,7 +1,6 @@
 html, body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: sans-serif;
 }
 body{
@@ -17,14 +16,14 @@ $bkcolor: pink;
     justify-content: space-between;
     align-items: center;
     span{
-        background: $bkcolor;
+        background: transparent;
         font-size: 3rem;
         font-weight: bolder;
         margin-left: 4rem;
         font-family: 'Times New Roman', Times, serif;
     }
     svg{
-        background: $bkcolor;
+        background: transparent;
         margin-right: 4rem;
     }
 }
@@ -35,17 +34,17 @@ $bkcolor: pink;
     flex-direction: column;
     height: 100vh;
     //this width = sum of child widths
-    width: 360vw;
+    width: 440vw;
 
        #first{
             height: 100vh;
-            width: 200vw;
+            width: 180vw;
             display: flex;
             align-items: center;
             #particles-div{
                 background: $bkcolor;
                 height: 100vh;
-                width: 200vw;
+                width: 180vw;
                 position: fixed;
             }
             #side-text{
@@ -72,23 +71,126 @@ $bkcolor: pink;
                     line-height: 1.5;
                 }
             }
+            #img-container{
+                height: 100vh;
+                width: 100vw;
+                margin-left: 80vw;
+                position: absolute;
+                background-image: url(images/bigphoto.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                #text-bk{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    height: 50vh;
+                    width: 30vw;
+                    margin-left: 35vw;
+                    margin-top: 25vh;
+                    background: rgba(255, 255, 255, 0.8);
+                    #short-bio-text{
+                        color: black;
+                        line-height: 2;
+                        font-size: 1.5rem;
+                        font-style: italic;
+                        border-style: solid;
+                        border-color: orange;
+                        border-left: none;
+                        border-right: none;
+                    }
+            }
+            }
         }
 
         #second{
             height: 100vh;
-            background: green;
-            width: 50vw;
+            width: 80vw;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            #about-description{
+                font-size: 2rem;
+                margin-bottom: 2rem;
+                padding: 0 10vw;
+            }
+            #about-link{
+                font-size: 1.5rem;
+                padding: 0 10vw;
+            }
         }
         
         #third{
             height: 100vh;
-            background: blue;
             width: 100vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            #a{
+                background-image: url(images/a.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin: 1vh 1vw;
+            }
+            #b{
+                background-image: url(images/b.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin: 1vh 1vw;
+            }
+            #c{
+                background-image: url(images/c.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin: 1vh 1vw;
+            }
+            #d{
+                background-image: url(images/d.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin: 1vh 1vw;
+            }
+            #e{
+                background: pink;
+                grid-row: 1/3;
+                grid-column: 3/4;
+                margin: 1vh 1vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                #view-work-link{
+                    font-size: 1.5rem;
+                }
+            }
         }
 
         #fourth{
             height: 100vh;
-            background: orange;
-            width: 10vw;
+            width: 80vw;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            #services-description{
+                font-size: 2rem;
+                margin-bottom: 2rem;
+                padding: 0 10vw;
+            }
+            #services-link{
+                font-size: 1.5rem;
+                padding: 0 10vw;
+            }
+        }
+
+        #fifth{
+            width: 100vw;
+            height: 100vh;
+            background: red;
         }
   }
