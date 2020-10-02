@@ -75,6 +75,7 @@ body {
 }
 
 #scroll-wrapper {
+  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,7 +101,7 @@ body {
 }
 
 #scroll-wrapper #first #particles-div {
-  background: pink;
+  background: white;
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -113,13 +114,13 @@ body {
   white-space: nowrap;
   margin-left: -5rem;
   z-index: 10;
-  background: pink;
+  background: white;
 }
 
 #scroll-wrapper #first #inner-div {
   width: 50vw;
   z-index: 10;
-  background: pink;
+  background: white;
 }
 
 #scroll-wrapper #first #inner-div #title {
@@ -135,7 +136,7 @@ body {
 }
 
 #scroll-wrapper #first #img-container {
-  height: 100vh;
+  height: 70vh;
   width: 100vw;
   margin-left: 80vw;
   position: absolute;
@@ -143,6 +144,15 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #scroll-wrapper #first #img-container #text-bk {
@@ -158,8 +168,6 @@ body {
   text-align: center;
   height: 50vh;
   width: 30vw;
-  margin-left: 35vw;
-  margin-top: 25vh;
   background: rgba(255, 255, 255, 0.8);
 }
 

@@ -6,7 +6,7 @@ html, body{
 body{
     overflow-x: hidden;
 }
-$bkcolor: pink;
+$bkcolor: white;
 #menu{
     position: fixed;
 }
@@ -57,6 +57,7 @@ $bkcolor: pink;
     }
 }
 #scroll-wrapper{
+    background: white;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -100,7 +101,7 @@ $bkcolor: pink;
                 }
             }
             #img-container{
-                height: 100vh;
+                height: 70vh;
                 width: 100vw;
                 margin-left: 80vw;
                 position: absolute;
@@ -108,6 +109,9 @@ $bkcolor: pink;
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 #text-bk{
                     display: flex;
                     justify-content: center;
@@ -115,8 +119,6 @@ $bkcolor: pink;
                     text-align: center;
                     height: 50vh;
                     width: 30vw;
-                    margin-left: 35vw;
-                    margin-top: 25vh;
                     background: rgba(255, 255, 255, 0.8);
                     #short-bio-text{
                         color: black;
