@@ -37,6 +37,31 @@ body {
   margin-right: 4rem;
 }
 
+#fixed-page {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#fixed-page #left {
+  width: 50vw;
+  height: 100vh;
+}
+
+#fixed-page #right {
+  width: 50vw;
+  height: 100vh;
+  background: orange;
+}
+
+#fixed-page #right span {
+  font-size: 4rem;
+}
+
 #scroll-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,7 +73,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100vh;
-  width: 440vw;
+  width: 600vw;
 }
 
 #scroll-wrapper #first {
@@ -138,6 +163,7 @@ body {
 }
 
 #scroll-wrapper #second {
+  background: white;
   height: 100vh;
   width: 80vw;
   display: -webkit-box;
@@ -167,6 +193,7 @@ body {
 }
 
 #scroll-wrapper #third {
+  background: white;
   height: 100vh;
   width: 100vw;
   display: -ms-grid;
@@ -234,6 +261,7 @@ body {
 }
 
 #scroll-wrapper #fourth {
+  background: white;
   height: 100vh;
   width: 80vw;
   display: -webkit-box;
@@ -265,6 +293,112 @@ body {
 #scroll-wrapper #fifth {
   width: 100vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: pink;
+}
+
+#scroll-wrapper #fifth #award-img {
+  width: 50vw;
+  height: 100vh;
+  background-image: url(images/trophy.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#scroll-wrapper #fifth #award-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50vw;
+  height: 100vh;
+}
+
+#scroll-wrapper #fifth #award-list span {
+  font-size: 3rem;
+  margin: 1rem 0;
+  font-weight: bolder;
+  color: white;
+}
+
+#scroll-wrapper #fifth #award-list div {
+  height: 1px;
+  background: white;
+  width: 30vw;
+}
+
+#scroll-wrapper #sixth {
+  background: white;
+  width: 30vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+#scroll-wrapper #sixth #top {
+  background-image: url(images/office.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 1vh 1vw;
+}
+
+#scroll-wrapper #sixth #bottom {
+  background-image: url(images/workers.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 1vh 1vw;
+}
+
+#scroll-wrapper #seventh {
   background: red;
+  height: 100vh;
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#scroll-wrapper #seventh #career-description {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 10vw;
+}
+
+#scroll-wrapper #seventh #career-link {
+  font-size: 1.5rem;
+  padding: 0 10vw;
+}
+
+#scroll-wrapper #eight {
+  width: 50vw;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

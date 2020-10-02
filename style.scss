@@ -27,14 +27,32 @@ $bkcolor: pink;
         margin-right: 4rem;
     }
 }
-
+#fixed-page{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    display: flex;
+    #left{
+        width: 50vw;
+        height: 100vh;
+    }
+    #right{
+        width: 50vw;
+        height: 100vh;
+        background: orange;
+        span{
+            font-size: 4rem;
+        }
+    }
+}
 #scroll-wrapper{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     height: 100vh;
     //this width = sum of child widths
-    width: 440vw;
+    width: 600vw;
 
        #first{
             height: 100vh;
@@ -105,6 +123,7 @@ $bkcolor: pink;
         }
 
         #second{
+            background: white;
             height: 100vh;
             width: 80vw;
             display: flex;
@@ -123,6 +142,7 @@ $bkcolor: pink;
         }
         
         #third{
+            background: white;
             height: 100vh;
             width: 100vw;
             display: grid;
@@ -171,6 +191,7 @@ $bkcolor: pink;
         }
 
         #fourth{
+            background: white;
             height: 100vh;
             width: 80vw;
             display: flex;
@@ -191,6 +212,79 @@ $bkcolor: pink;
         #fifth{
             width: 100vw;
             height: 100vh;
-            background: red;
+            display: flex;
+            background: pink;
+            #award-img{
+                width: 50vw;
+                height: 100vh;
+                background-image: url(images/trophy.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            #award-list{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 50vw;
+                height: 100vh;
+                span{
+                    font-size: 3rem;
+                    margin: 1rem 0;
+                    font-weight: bolder;
+                    color: white;
+                }
+                div{
+                    height: 1px;
+                    background: white;
+                    width: 30vw;
+                }
+            }
         }
+        #sixth{
+            background: white;
+            width: 30vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            #top{
+                background-image: url(images/office.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin: 1vh 1vw;
+            }
+            #bottom{
+                background-image: url(images/workers.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin: 1vh 1vw;
+            }
+        }
+        #seventh{
+            background: red;
+            height: 100vh;
+            width: 80vw;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            #career-description{
+                font-size: 2rem;
+                margin-bottom: 2rem;
+                padding: 0 10vw;
+            }
+            #career-link{
+                font-size: 1.5rem;
+                padding: 0 10vw;
+            }
+        }
+        #eight{
+            width: 50vw;
+            height: 100vh;
+        }
+      
   }
