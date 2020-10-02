@@ -7,6 +7,16 @@ body{
     overflow-x: hidden;
 }
 $bkcolor: pink;
+#menu{
+    position: fixed;
+}
+.showmenu{
+    background: red;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+}
 #nav{
     height: 20vh;
     width: 100vw;
