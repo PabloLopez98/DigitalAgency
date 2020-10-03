@@ -69,11 +69,32 @@ body {
   width: 50vw;
   height: 100vh;
   background: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#fixed-page #right span {
-  font-size: 4rem;
-  color: white;
+#fixed-page #right #top {
+  font-size: 3rem;
+}
+
+#fixed-page #right #middle {
+  font-size: 6rem;
+  font-weight: bolder;
+  margin: 5vh 0;
+}
+
+#fixed-page #right #bottom {
+  font-size: 1rem;
 }
 
 #scroll-wrapper {
@@ -417,7 +438,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin: 1vh 1vw;
 }
 
 #scroll-wrapper #sixth #bottom {
@@ -425,7 +445,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin: 1vh 1vw;
 }
 
 #scroll-wrapper #seventh {

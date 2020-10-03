@@ -52,9 +52,21 @@ $bkcolor: white;
         width: 50vw;
         height: 100vh;
         background: black;
-        span{
-            font-size: 4rem;
-            color: white;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        #top{
+            font-size: 3rem;
+        }
+        #middle{
+            font-size: 6rem;
+            font-weight: bolder;
+            margin: 5vh 0;
+        }
+        #bottom{
+            font-size: 1rem;
         }
     }
 }
@@ -288,14 +300,12 @@ $bkcolor: white;
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
-                margin: 1vh 1vw;
             }
             #bottom{
                 background-image: url(images/workers.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
-                margin: 1vh 1vw;
             }
         }
         #seventh{
