@@ -20,17 +20,77 @@ body {
 }
 
 #menu #left {
-  height: 0vh;
-  width: 0vw;
-  background: red;
+  visibility: hidden;
+  opacity: 0;
+  height: 100vh;
+  width: 50vw;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  font-size: 5rem;
+  font-weight: bolder;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#menu #left #item:hover {
+  cursor: pointer;
+  color: white;
 }
 
 #menu #right {
-  height: 0vh;
-  width: 0vw;
-  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  height: 100vh;
+  width: 50vw;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#menu #right #top {
+  font-size: 5rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+
+#menu #right #middle {
+  font-size: 1rem;
+  width: 20vw;
+  margin-bottom: 4rem;
+  line-height: 1.5;
+}
+
+#menu #right #bottom {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+#menu #right #bottom:hover {
+  cursor: pointer;
+  color: white;
 }
 
 #nav {
