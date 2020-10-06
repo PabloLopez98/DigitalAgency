@@ -9,15 +9,28 @@ body {
 }
 
 #menu {
-  position: fixed;
-}
-
-.showmenu {
-  background: red;
-  width: 100vw;
-  height: 100vh;
+  background: pink;
+  width: 50vw;
+  height: 0vh;
   position: fixed;
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#menu #left {
+  height: 0vh;
+  width: 0vw;
+  background: red;
+  overflow: hidden;
+}
+
+#menu #right {
+  height: 0vh;
+  width: 0vw;
+  background: orange;
+  overflow: hidden;
 }
 
 #nav {
@@ -34,20 +47,21 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
+  mix-blend-mode: difference;
 }
 
 #nav span {
-  background: transparent;
   font-size: 3rem;
   font-weight: bolder;
   margin-left: 4rem;
   font-family: 'Times New Roman', Times, serif;
 }
 
-#nav svg {
+#nav i {
   cursor: pointer;
-  background: transparent;
   margin-right: 4rem;
+  font-size: 1.8rem;
 }
 
 #fixed-page {
