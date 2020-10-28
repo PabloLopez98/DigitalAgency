@@ -43,6 +43,11 @@ body {
           align-items: center;
 }
 
+#menu #left #item {
+  color: black;
+  text-decoration: none;
+}
+
 #menu #left #item:hover {
   cursor: pointer;
   color: white;
@@ -86,6 +91,8 @@ body {
 #menu #right #bottom {
   font-size: 2rem;
   font-weight: bolder;
+  color: black;
+  text-decoration: none;
 }
 
 #menu #right #bottom:hover {
@@ -134,12 +141,12 @@ body {
   display: flex;
 }
 
-#fixed-page #left {
+#fixed-page #lefty {
   width: 50vw;
   height: 100vh;
 }
 
-#fixed-page #right {
+#fixed-page #righty {
   width: 50vw;
   height: 100vh;
   background: black;
@@ -157,17 +164,17 @@ body {
           justify-content: center;
 }
 
-#fixed-page #right #top {
+#fixed-page #righty #top {
   font-size: 3rem;
 }
 
-#fixed-page #right #middle {
+#fixed-page #righty #middle {
   font-size: 6rem;
   font-weight: bolder;
   margin: 5vh 0;
 }
 
-#fixed-page #right #bottom {
+#fixed-page #righty #bottom {
   font-size: 1rem;
 }
 
@@ -315,6 +322,8 @@ body {
   font-weight: bold;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
+  color: black;
+  text-decoration: none;
 }
 
 #scroll-wrapper #second #about-link:hover {
@@ -390,6 +399,8 @@ body {
   font-weight: bolder;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
+  color: black;
+  text-decoration: none;
 }
 
 #scroll-wrapper #third #e #view-work-link:hover {
@@ -431,6 +442,8 @@ body {
   font-weight: bold;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
+  color: black;
+  text-decoration: none;
 }
 
 #scroll-wrapper #fourth #services-link:hover {
@@ -557,6 +570,8 @@ body {
   font-weight: bold;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
+  color: white;
+  text-decoration: none;
 }
 
 #scroll-wrapper #seventh #career-link:hover {

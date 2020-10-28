@@ -23,3 +23,12 @@ thehamburgericon.addEventListener('click', () => {
         thehamburgericon.className = 'fas fa-times'
     }
 })
+
+let sixthpage = document.getElementById('sixth-page')
+let contacttext = document.getElementById('contacttext')
+sixthpage.addEventListener('mouseover', () => {
+    contacttext.style.color = 'yellow';
+})
+sixthpage.addEventListener('mouseout', () => {
+    contacttext.style.color = 'white';
+})

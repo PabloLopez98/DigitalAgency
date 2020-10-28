@@ -4,6 +4,7 @@ html, body{
     font-family: sans-serif;
 }
 body{
+    //hide bottom scroll bar
     overflow-x: hidden;
 }
 $bkcolor: white;
@@ -28,6 +29,8 @@ $bkcolor: white;
         justify-content: center;
         align-items: center;
         #item{
+            color: black;
+            text-decoration: none;
             &:hover{
                 cursor: pointer;
                 color: white;
@@ -59,6 +62,8 @@ $bkcolor: white;
         #bottom{
             font-size: 2rem;
             font-weight: bolder;
+            color: black;
+            text-decoration: none;
             &:hover{
                 cursor: pointer;
                 color: white;
@@ -94,11 +99,11 @@ $bkcolor: white;
     height: 100vh;
     z-index: -10;
     display: flex;
-    #left{
+    #lefty{
         width: 50vw;
         height: 100vh;
     }
-    #right{
+    #righty{
         width: 50vw;
         height: 100vh;
         background: black;
@@ -121,15 +126,16 @@ $bkcolor: white;
     }
 }
 #scroll-wrapper{
-    background: white;
+    background: $bkcolor;
     display: flex;
+    //flex-wrap aligns all the pages on a row so they all fit horizontally
     flex-wrap: wrap;
     flex-direction: column;
     height: 100vh;
     //this width = sum of child widths
     width: 600vw;
 
-       #first{
+        #first{
             height: 100vh;
             width: 180vw;
             display: flex;
@@ -198,7 +204,7 @@ $bkcolor: white;
             }
         }
         #second{
-            background: white;
+            background: $bkcolor;
             height: 100vh;
             width: 80vw;
             display: flex;
@@ -219,6 +225,8 @@ $bkcolor: white;
                 padding: 0 10vw;
                 font-weight: bold;
                 transition: all .4s ease;
+                color: black;
+                text-decoration: none;
                 &:hover{color: red}
             }
         }
@@ -269,12 +277,14 @@ $bkcolor: white;
                     font-size: 2rem;
                     font-weight: bolder;
                     transition: all .4s ease;
+                    color: black;
+                    text-decoration: none;
                     &:hover{color: white}
                 }
             }
         }
         #fourth{
-            background: white;
+            background: $bkcolor;
             height: 100vh;
             width: 80vw;
             display: flex;
@@ -294,6 +304,8 @@ $bkcolor: white;
                 padding: 0 10vw;
                 font-weight: bold;
                 transition: all .4s ease;
+                color: black;
+                text-decoration: none;
                 &:hover{color: red}
             }
         }
@@ -337,7 +349,7 @@ $bkcolor: white;
             }
         }
         #sixth{
-            background: white;
+            background: $bkcolor;
             width: 30vw;
             height: 100vh;
             display: grid;
@@ -378,6 +390,8 @@ $bkcolor: white;
                 padding: 0 10vw;
                 font-weight: bold;
                 transition: all .4s ease;
+                color: white;
+                text-decoration: none;
                 &:hover{color: black}
             }
         }
