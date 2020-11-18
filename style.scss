@@ -175,7 +175,7 @@ $bkcolor: white;
                 width: 100vw;
                 margin-left: 80vw;
                 position: absolute;
-                background-image: url(images/bigphoto.jpg);
+                background-image: url(images/convertedcity.webp);
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
@@ -237,33 +237,23 @@ $bkcolor: white;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr;
-            #a{
-                background-image: url(images/a.jpg);
+            .theimg{
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
                 margin: 1vh 1vw;
             }
-            #b{
-                background-image: url(images/b.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center center;
-                margin: 1vh 1vw;
+            .a{
+                background-image: url(images/aa.webp);
             }
-            #c{
-                background-image: url(images/c.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center center;
-                margin: 1vh 1vw;
+            .b{
+                background-image: url(images/bb.webp);
             }
-            #d{
-                background-image: url(images/d.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center center;
-                margin: 1vh 1vw;
+            .c{
+                background-image: url(images/cc.webp);
+            }
+            .d{
+                background-image: url(images/dd.webp);
             }
             #e{
                 background: pink;
@@ -317,7 +307,7 @@ $bkcolor: white;
             #award-img{
                 width: 50vw;
                 height: 100vh;
-                background-image: url(images/trophy.png);
+                background-image: url(images/convertedtrophy.webp);
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
@@ -355,17 +345,16 @@ $bkcolor: white;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
-            #top{
-                background-image: url(images/office.jpg);
+            .theimage{
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
             }
-            #bottom{
-                background-image: url(images/workers.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center center;
+            .top{
+                background-image: url(images/convertedoffice.webp);
+            }
+            .bottom{
+                background-image: url(images/convertedworkers.webp);
             }
         }
         #seventh{

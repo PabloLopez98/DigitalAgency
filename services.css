@@ -1,0 +1,243 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#menu {
+  background: pink;
+  width: 50vw;
+  height: 0vh;
+  position: fixed;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#menu #left {
+  visibility: hidden;
+  opacity: 0;
+  height: 100vh;
+  width: 50vw;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  font-size: 5rem;
+  font-weight: bolder;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#menu #left #item {
+  color: black;
+  text-decoration: none;
+}
+
+#menu #left #item:hover {
+  cursor: pointer;
+  color: white;
+}
+
+#menu #right {
+  visibility: hidden;
+  opacity: 0;
+  height: 100vh;
+  width: 50vw;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#menu #right #top {
+  font-size: 5rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+
+#menu #right #middle {
+  font-size: 1rem;
+  width: 20vw;
+  margin-bottom: 4rem;
+  line-height: 1.5;
+}
+
+#menu #right #bottom {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: black;
+  text-decoration: none;
+}
+
+#menu #right #bottom:hover {
+  cursor: pointer;
+  color: white;
+}
+
+#nav {
+  height: 20vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+#nav span {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-left: 4rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#nav i {
+  cursor: pointer;
+  margin-right: 4rem;
+  font-size: 1.8rem;
+}
+
+#fixed-page {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#fixed-page #lefty {
+  width: 70vw;
+  height: 100vh;
+}
+
+#fixed-page #righty {
+  width: 30vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: red;
+}
+
+#fixed-page #righty #contacttext {
+  color: white;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+#scroll-wrapper-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 420vw;
+}
+
+#scroll-wrapper-about #opening-page, #scroll-wrapper-about #second-page, #scroll-wrapper-about #fourth-page {
+  height: 100vh;
+  width: 60vw;
+  background: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#scroll-wrapper-about #opening-page span, #scroll-wrapper-about #second-page span, #scroll-wrapper-about #fourth-page span {
+  max-width: 30vw;
+  margin-bottom: 2vh;
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+#scroll-wrapper-about #first-page {
+  height: 100vh;
+  width: 70vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: whitesmoke;
+  background-image: url(images/ezgif-7-7c657c27b375.webp);
+}
+
+#scroll-wrapper-about #third-page {
+  height: 100vh;
+  width: 70vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(images/newcode.webp);
+}
+
+#scroll-wrapper-about #fifth-page {
+  height: 100vh;
+  width: 70vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(images/analysisnew.webp);
+}
+
+#scroll-wrapper-about #sixth-page {
+  height: 100vh;
+  width: 30vw;
+  cursor: pointer;
+}
+/*# sourceMappingURL=services.css.map */
