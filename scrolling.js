@@ -8,11 +8,10 @@ gsap.to(
         x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
         ease: "slow",
         scrollTrigger: {
-            //ease: "slow",
+            duration: 1,
             trigger: container,
             pin: true,
-            //how many seconds to keep scrolling once the mouse is unclicked
-            scrub: 0.7,
+            scrub: .7,
             end: () => "+=" + container.offsetWidth,
         }
     }

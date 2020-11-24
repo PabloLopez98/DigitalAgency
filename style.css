@@ -350,19 +350,21 @@ body {
 }
 
 #scroll-wrapper #third .a {
-  background-image: url(images/aa.webp);
+  background-image: url(images/rlogo_thumb.svg);
 }
 
 #scroll-wrapper #third .b {
-  background-image: url(images/bb.webp);
+  background-image: url(images/decal.svg);
 }
 
 #scroll-wrapper #third .c {
-  background-image: url(images/cc.webp);
-}
-
-#scroll-wrapper #third .d {
-  background-image: url(images/dd.webp);
+  background-image: url(images/abc_logo.svg);
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
 }
 
 #scroll-wrapper #third #e {
@@ -507,8 +509,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
 }
 
 #scroll-wrapper #sixth .theimage {
@@ -519,10 +521,6 @@ body {
 
 #scroll-wrapper #sixth .top {
   background-image: url(images/convertedoffice.webp);
-}
-
-#scroll-wrapper #sixth .bottom {
-  background-image: url(images/convertedworkers.webp);
 }
 
 #scroll-wrapper #seventh {
@@ -572,5 +570,40 @@ body {
 #scroll-wrapper #eight {
   width: 50vw;
   height: 100vh;
+}
+
+#blocker {
+  height: 0vh;
+  width: 0vw;
+  position: fixed;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+#blocker span {
+  font-size: 0rem;
+}
+
+@media only screen and (max-width: 400px) {
+  #scroll-wrapper {
+    visibility: hidden;
+  }
+  #blocker {
+    height: 100vh;
+    width: 100vw;
+  }
+  #blocker span {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
