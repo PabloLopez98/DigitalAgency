@@ -161,7 +161,7 @@ html, body {
 }
 
 #career-page-wrapper #column:nth-child(1) {
-  background-image: url("images/uiux.jpg");
+  background-image: url("/images/uiux.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -173,7 +173,7 @@ html, body {
 }
 
 #career-page-wrapper #column:nth-child(2) {
-  background-image: url("images/convertedworkers.webp");
+  background-image: url("/images/convertedworkers.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -185,7 +185,7 @@ html, body {
 }
 
 #career-page-wrapper #column:nth-child(3) {
-  background-image: url("images/convertedoffice.webp");
+  background-image: url("/images/convertedoffice.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

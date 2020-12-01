@@ -175,7 +175,7 @@ $bkcolor: white;
                 width: 100vw;
                 margin-left: 80vw;
                 position: absolute;
-                background-image: url(images/convertedcity.webp);
+                background-image: url(/images/convertedcity.webp);
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
@@ -244,13 +244,13 @@ $bkcolor: white;
                 margin: 1vh 1vw;
             }
             .a{
-                background-image: url(images/rlogo_thumb.svg);
+                background-image: url(/images/rlogo_thumb.svg);
             }
             .b{
-                background-image: url(images/decal.svg);
+                background-image: url(/images/decal.svg);
             }
             .c{
-                background-image: url(images/abc_logo.svg);
+                background-image: url(/images/abc_logo.svg);
                 grid-row: 1/3;
                 grid-column: 2/3;
             }
@@ -306,7 +306,7 @@ $bkcolor: white;
             #award-img{
                 width: 50vw;
                 height: 100vh;
-                background-image: url(images/convertedtrophy.webp);
+                background-image: url(/images/convertedtrophy.webp);
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
@@ -350,7 +350,7 @@ $bkcolor: white;
                 background-position: center center;
             }
             .top{
-                background-image: url(images/convertedoffice.webp);
+                background-image: url(/images/convertedoffice.webp);
             }
         }
         #seventh{
